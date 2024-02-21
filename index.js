@@ -39,7 +39,7 @@ array.splice(3, 2);
 console.log(array.length); */
 
 // funcoes exercicio 2
-
+/*
 function escreveNome(nome){
     console.log(`Ola ${nome}`);
 }
@@ -47,3 +47,34 @@ function escreveNome(nome){
 escreveNome("Gabriel");
 escreveNome("Joao");
 escreveNome("maria");
+*/
+
+//funcoes 2
+
+/* const a = 1;
+
+function imprimeVariavel(){
+    const b = 2;
+    console.log("variavel a:", a);
+    console.log("variavel b:", b);
+}
+imprimeVariavel();
+
+console.log("variavel a:", a);
+console.log("variavel b:", b); */
+
+//exercicio 3
+
+/* function somaDoisNumeros(numa, numb){
+    return numa + numb;
+}
+var resultado = somaDoisNumeros(3, 5);
+console.log(resultado); */
+
+//exercicio 4
+
+function recebeArray(arrayDeNumeros = []){
+    return [(arrayDeNumeros.length)/2, (arrayDeNumeros[0])/2];
+}
+
+console.log(recebeArray([1,2,3,4,5,6,7,8,9]));
