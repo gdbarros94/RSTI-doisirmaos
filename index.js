@@ -73,8 +73,55 @@ console.log(resultado); */
 
 //exercicio 4
 
-function recebeArray(arrayDeNumeros = []){
+/* function recebeArray(arrayDeNumeros = []){
     return [(arrayDeNumeros.length)/2, (arrayDeNumeros[0])/2];
 }
 
-console.log(recebeArray([1,2,3,4,5,6,7,8,9]));
+console.log(recebeArray([1,2,3,4,5,6,7,8,9])); */
+
+/* const professor = {
+    nome: 'Vitor',
+    idade: 27,
+    tarefas:['Dar aula', 'Responder dúvidas'],
+    contarPiada: function() {
+      console.log('É pa vê ou pa comê?')
+   }
+  }
+
+  console.log(professor.nome);
+  console.log(professor["idade"]);
+    professor.nome = "Gabriel";
+    console.log(professor.nome); */
+
+var filme = {
+    nome: "matrix",
+    direcao: "nao sei",
+    ano: 1999,
+    elenco: ["neo", "jesus", "jebus", "ala"],
+    visto: true,
+}
+
+filme.personagens = ["personagem 1", "personagem 2", "personagem 3", "personagem 4"];
+
+console.log(filme.elenco[0] + " - " + filme.personagens[0]);
+console.log(filme.elenco[1] + " - " + filme.personagens[1]);
+console.log(filme.elenco[2] + " - " + filme.personagens[2]);
+console.log(filme.elenco[3] + " - " + filme.personagens[3]);
+
+filme.elenco[0] = "xuxa";
+console.log(filme.elenco[0]);
+console.log(filme);
+
+/* 
+console.log(filme.nome);
+console.log(filme.direcao);
+console.log(filme["ano"]);
+console.log(filme["elenco"]);
+console.log(filme.visto); */
+
+/* var pessoa = {
+    nome:"gabriel",
+    idade:30,
+    generoMusical:"sertanejo",
+}
+console.log(`O nome da pessoa é ${pessoa.nome}, ela tem ${pessoa.idade} anos e gosta muito de ${pessoa.generoMusical}`); */
