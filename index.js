@@ -119,7 +119,7 @@ console.log(filme["ano"]);
 console.log(filme["elenco"]);
 console.log(filme.visto); */
 
-
+/* 
 var pessoa = {
     nome:"gabriel",
     idade:30,
@@ -135,7 +135,7 @@ function exercicio4(objetoPessoa, arrayComidas, objetoMelhorAmigo){
 }
 
 exercicio4(pessoa, ["arroz", "feijao", "carne"], {nome: "joao", idade:10});
-
+ */
 /*
 Crie uma função que:
 
@@ -153,11 +153,11 @@ function comparaDoisNumeros (num, num2){
     if(num === num2){console.log("sucesso");}
 }
 comparaDoisNumeros(prompt("Digite num 1"), prompt("Digite num 2")); */
-
+/* 
 function podeDirigir(nome, idade){
     if(idade >= 18){
         return `${nome}, voce pode dirigir`;
     }
 }
 
-console.log(podeDirigir(prompt("Digite seu nome"), prompt("digite sua idade")));
+console.log(podeDirigir(prompt("Digite seu nome"), prompt("digite sua idade"))); */
