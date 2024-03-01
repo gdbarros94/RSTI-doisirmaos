@@ -161,3 +161,36 @@ function podeDirigir(nome, idade){
 }
 
 console.log(podeDirigir(prompt("Digite seu nome"), prompt("digite sua idade"))); */
+
+
+
+/* function compararNumeros(num1, num2) {
+    if (num1 > num2) {
+      return `O primeiro número (${num1}) é maior que o segundo número (${num2}).`;
+    } else if (num1 < num2) {
+      return `O primeiro número (${num1}) é menor que o segundo número (${num2}).`;
+    } else {
+      return `Os dois números são iguais: ${num1}.`;
+    }
+  }
+    const num1 = prompt("Digite o primeiro número:");
+    const num2 = prompt("Digite o segundo número:");
+    const resultado = compararNumeros(num1, num2);
+        alert(resultado); */
+
+var pokemon = prompt("Escolha seu pokemon");
+
+switch (pokemon) {
+    case "Bulbasauro":
+        console.log("Planta e veneno");
+        break;
+    case "Charmander":
+        console.log("Fogo");
+        break;
+    case "Squirtle":
+        console.log("Agua");
+        break;
+    default:
+        console.log("Pokemon não encontrado");
+        break;
+}
