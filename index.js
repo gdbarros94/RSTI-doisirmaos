@@ -178,7 +178,7 @@ console.log(podeDirigir(prompt("Digite seu nome"), prompt("digite sua idade")));
     const resultado = compararNumeros(num1, num2);
         alert(resultado); */
 
-var pokemon = prompt("Escolha seu pokemon");
+/* var pokemon = prompt("Escolha seu pokemon");
 
 switch (pokemon) {
     case "Bulbasauro":
@@ -193,4 +193,55 @@ switch (pokemon) {
     default:
         console.log("Pokemon não encontrado");
         break;
+} */
+
+
+
+//exercicio 5 
+
+/* function podeEntrarNaFaculdade(ensinoMedio, idade, faculdade){
+    if(ensinoMedio === "sim" || ensinoMedio === "Sim"){ensinoMedio = true;}else{ensinoMedio = false;}
+
+    if(faculdade === "sim" || faculdade === "Sim"){faculdade = true;}else{faculdade = false;}
+
+    if(idade >= 18 && ensinoMedio && !faculdade){
+        return "Voce pode entrar na faculdade";
+    }
+    else{return "voce NAO pode entrar na faculdade";}
 }
+console.log(
+podeEntrarNaFaculdade(
+    prompt("Voce concluiu o ensino medio?"),
+    Number(prompt("qual sua idade?")),
+    prompt("voce ja estuda em uma faculdade?")
+)
+);
+ */
+function calculaArea(base, altura) {
+    return base * altura;
+}
+
+function calculaAreaTotal(valores = []) {
+    var resultado = valores[0] + valores[1] + valores[2] + valores[3];
+    return resultado;
+}
+function calcularValores(valores = []) {
+    valores[0] = Number(valores[0]);
+    valores[1] = Number(valores[1]);
+
+    var areaCalculada = calculaArea(valores[0], valores[1])
+    var areaTotal = calculaAreaTotal([areaCalculada,areaCalculada,areaCalculada,areaCalculada]);
+
+    return areaTotal;
+}
+
+function pegaValores() {
+   return calcularValores([prompt("Digite a base"), prompt("Digite a altura")]);
+}
+
+console.log(pegaValores());
+
+var array = [1,2,3,4,5,6,7,8,9,8,7,6,5,4,3,2,3,4,5,6,7,8,9];
+array.forEach(element => {
+    console.log(element);
+});
