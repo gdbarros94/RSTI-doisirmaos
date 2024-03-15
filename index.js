@@ -217,7 +217,7 @@ podeEntrarNaFaculdade(
 )
 );
  */
-function calculaArea(base, altura) {
+/* function calculaArea(base, altura) {
     return base * altura;
 }
 
@@ -244,4 +244,91 @@ console.log(pegaValores());
 var array = [1,2,3,4,5,6,7,8,9,8,7,6,5,4,3,2,3,4,5,6,7,8,9];
 array.forEach(element => {
     console.log(element);
-});
+}); */
+
+// Função para embaralhar os nomes dos alunos
+function embaralhar(alunos) {
+    for (let i = alunos.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [alunos[i], alunos[j]] = [alunos[j], alunos[i]];
+    }
+    return alunos;
+  }
+  
+  // Função para dividir os alunos em grupos iguais
+  function dividirEmGrupos(alunos, numeroDeGrupos) {
+    const grupos = [];
+    for (let i = 0; i < alunos.length; i += numeroDeGrupos) {
+      grupos.push(alunos.slice(i, i + numeroDeGrupos));
+    }
+    return grupos;
+  }
+  
+  // Função para gerar um UID único para cada grupo
+  function gerarUID() {
+    return Math.random().toString(36).substring(7);
+  }
+  
+  // Função principal
+  function sortearGrupos(alunos, numeroDeGrupos) {
+    const alunosEmbaralhados = embaralhar(alunos.slice()); // Cria uma cópia do array original
+    const grupos = dividirEmGrupos(alunosEmbaralhados, numeroDeGrupos);
+    const resultado = grupos.map((grupo) => {
+      return {
+        uid: gerarUID(),
+        membros: grupo,
+      };
+    });
+    return resultado;
+  }
+  
+  // Exemplo de uso
+  //const alunos = ["Ana", "Bruno", "Carlos", "Daniela", "Eduardo", "Fernanda"];
+  //const numeroDeGrupos = 3;
+  //const resultado = sortearGrupos(alunos, numeroDeGrupos);
+  
+ // console.log(resultado);
+
+ function somarNumeros() {
+    let soma = 0;
+    let numero = 1;
+    while (numero !== 0) {
+      numero = Number(prompt("Digite um número (ou 0 para sair): "));
+      soma += numero;
+    }
+      console.log(`A soma dos números digitados é: ${soma}`);
+  }
+//somarNumeros();
+
+
+
+function somarNumerosComArray() {
+    const numeros = []; 
+    let numero = 1;
+      while (numero !== 0) {
+      numero = parseInt(prompt("Digite um número (ou 0 para sair): "));
+      numeros.push(numero);
+    }
+    const soma = numeros.reduce((acumulador, numero) => acumulador + numero, 0);
+    console.log(`A soma dos números digitados é: ${soma}`);
+  }
+  
+  // Chamar a função
+  somarNumerosComArray();
+
+/*for (let index = 0; index < 10; index++) {
+    console.log(index)
+}*/
+
+function valorMaior(array){
+    var numeroMaior = array[0];
+    for (let index = 0; index < array.length; index++) {
+        const element = array[index];
+        if(element > numeroMaior){
+            numeroMaior = element
+        }
+    }
+    return numeroMaior;
+}
+var meuArray = [10,20,30,50,80,1,99,4,60]
+console.log(valorMaior(meuArray));
